@@ -1,0 +1,126 @@
+@import "template/init";
+
+.root {
+  -fx-background-color: #F0F4F5;
+
+  .title {
+    -fx-font-family: "Eudoxus Sans ExtraBold";
+    -fx-font-size: 25;
+    -fx-fill: #52575d;
+  }
+
+  .article {
+    -fx-font-family: "Eudoxus Sans Medium";
+    -fx-font-size: 18;
+    -fx-fill: #919191;
+  }
+
+
+  .box {
+    -fx-background-color: #EBEBEB;
+    -fx-background-radius: 9;
+
+    .mfx-button {
+      -fx-background-color: #EBEBEB;
+      -fx-border-color: none;
+      -fx-background-radius: 9;
+      -fx-font-family: "Eudoxus Sans ExtraBold";
+      -fx-font-size: 10.5;
+      -fx-font-weight: bold!important;
+      -fx-fill: #52575d!important;
+      -fx-text-fill: #52575d!important;
+      .mfx-ripple-generator {
+        -mfx-auto-clip: true;
+
+      }
+
+      &.mfx-button-selected {
+        -fx-background-color: #FBFBFB;
+      }
+    }
+  }
+
+  .container {
+    -fx-background-color: none;
+    -fx-border-color: #ddd;
+    -fx-border-radius: 9;
+
+    .mfa-glyph {
+      -fx-fill: #52575d;
+      -fx-stroke: none;
+      -fx-scale-x:0.6!important;
+      -fx-scale-y:0.6!important;
+    }
+
+    .line {
+      -fx-background-color: #ddd;
+    }
+
+    .text-field {
+      -fx-font-family: "Eudoxus Sans Medium";
+      -fx-font-size: 11.5;
+      -fx-fill: #919191;
+      -fx-prompt-text-fill: #c5c5c5;
+      -fx-background-color: none!important;
+      -fx-border-color: none!important;
+    }
+  }
+
+  .info {
+    -fx-font-family: "Eudoxus Sans Medium";
+    -fx-font-size: 11;
+    -fx-fill: #919191;
+  }
+
+
+  .account {
+    -fx-font-family: "Eudoxus Sans Medium";
+    -fx-font-size: 12;
+    -fx-fill: #919191;
+  }
+
+  .hyperlink {
+    -fx-font-family: "Eudoxus Sans ExtraBold";
+    -fx-font-size: 12;
+    -fx-font-weight: bold!important;
+    -fx-fill: #739FD8!important;
+    -fx-text-fill: #739FD8!important;
+  }
+
+  .terms {
+    -fx-font-family: "Eudoxus Sans ExtraBold";
+    -fx-font-size: 10.5;
+    -fx-font-weight: bold!important;
+    -fx-fill: #739FD8!important;
+    -fx-text-fill: #739FD8!important;
+  }
+
+  .and {
+    // 52575d
+
+    -fx-font-family: "Eudoxus Sans ExtraBold";
+    -fx-font-size: 10.5;
+    -fx-font-weight: bold!important;
+    -fx-fill: #52575d!important;
+    -fx-text-fill: #52575d!important;
+  }
+
+
+  .mfx-button-closer {
+    -fx-background-color: none!important;
+    -fx-background-radius: 50%!important;
+    -fx-border-radius: 100%!important;
+    .mfx-ripple-generator {
+      -mfx-auto-clip: true
+    }
+
+    .mfa-glyph {
+      -fx-stroke: white!important;
+      -fx-stroke-width: 1.5;
+      -fx-scale-x: .7;
+      -fx-scale-y: .7;
+    }
+  }
+
+
+}

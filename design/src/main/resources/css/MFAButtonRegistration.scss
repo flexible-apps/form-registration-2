@@ -1,0 +1,38 @@
+.mfa-button-registration {
+  -fx-background-color: linear-gradient(to right, #60828D, #B5CAD3) !important;
+  -fx-background-radius: 9!important;
+  -mfa-horizontal-space: 15.0!important;
+
+  .mfa-container {
+    .mfa-container-text {
+      .mfa-text {
+        -fx-font-family: "Google Sans Medium"!important;
+        -fx-font-size: 13;
+        -fx-fill: white!important;
+        -fx-text-fill: white!important;
+        -fx-font-weight: bold;
+      }
+    }
+
+    .mfa-container-icon {
+      .mfa-glyph {
+        -fx-fill: white!important;
+        -fx-stroke: none;
+      }
+    }
+
+    .mfa-container-arrow {
+      .mfa-glyph {
+        -fx-fill: white!important;
+        -fx-stroke: none;
+      }
+    }
+  }
+
+
+
+
+  .mfx-ripple-generator {
+    -mfx-auto-clip: true !important;
+  }
+}

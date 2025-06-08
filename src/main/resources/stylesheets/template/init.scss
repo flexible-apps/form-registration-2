@@ -1,0 +1,98 @@
+@import "vars";
+// style of combobox
+
+.mfx-combo-box {
+  -fx-background-color: none !important;
+  -fx-border-color: none !important;
+  -fx-font-family: "Eudoxus Sans ExtraBold" !important;
+  -fx-text-fill: #353842 !important;
+  -fx-font-size: 11 !important;
+  -fx-max-width: 90 !important;
+  -fx-pref-width: 90 !important;
+
+  .mfx-text-field {
+    -fx-border-color: none !important;
+    -fx-pref-width: 100%;
+    -fx-max-width: 100%;
+    //noinspection CssInvalidPseudoSelector
+    &:focus-within {
+      -fx-background-insets: 2;
+      -fx-border-color: none !important;
+      -fx-border-width: 1.5;
+      -fx-border-insets: -0.5;
+
+      .caret .mfx-font-icon {
+        -mfx-color: #353842;
+      }
+    }
+  }
+
+  & .caret {
+    -fx-pref-width: 20 !important;
+    -fx-max-width: 20 !important;
+    -fx-alignment: center !important;
+    -fx-translate-x: -10 !important;
+
+    & .mfx-font-icon {
+      -mfx-color: #353842;
+    }
+  }
+
+  //noinspection CssInvalidPseudoSelector
+  &:focus-within .caret .mfx-font-icon {
+    -mfx-color: #353842;
+  }
+}
+
+.separator-right {
+  -fx-background-color: linear-gradient(to right, #9c9c9d, #e7e7e8, #F0F4F5);
+  -fx-background-radius: 1 0 0 1;
+}
+
+.separator-left {
+  -fx-background-color: linear-gradient(to right, #F0F4F5, #e7e7e8, #9c9c9d);
+  -fx-background-radius: 0 1 1 0;
+}
+
+.page-filter {
+  -fx-background-color: rgba($color-filter, .45);
+}
+
+.mfa-button-registration {
+  .mfa-container {
+    .mfa-container-text {
+      .mfa-text {
+        -fx-font-family: "Google Sans Medium"!important;
+        -fx-font-size: 13;
+        -fx-fill: white!important;
+        -fx-text-fill: white!important;
+        -fx-font-weight: bold;
+      }
+    }
+  }
+
+  &.mfa-button-registration-google {
+    -fx-background-color: white !important;
+
+    .mfa-container {
+      .mfa-container-text {
+        .mfa-text {
+          -fx-font-family: "Google Sans Medium"!important;
+          -fx-font-size: 13;
+          -fx-fill: #52575d!important;
+          -fx-text-fill: white!important;
+          -fx-font-weight: bold;
+        }
+      }
+
+      .mfa-container-arrow {
+        .mfa-glyph {
+          -fx-fill: #52575d!important;
+        }
+      }
+    }
+  }
+}
+
+
+

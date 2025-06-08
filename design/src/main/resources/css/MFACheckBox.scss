@@ -1,0 +1,91 @@
+.mfx-checkbox, .mfa-checkbox {
+  -mfx-main: #24BC66;
+  -mfx-secondary: #424242;
+  -fx-font-weight: 300;
+  -fx-font-size: 11;
+  -fx-text-fill: #616161 !important;
+  -fx-padding: 0 0 0 -5 !important;
+  -fx-background-color: transparent!important;
+  -fx-font-family: "Eudoxus Sans ExtraBold";
+  -fx-font-size: 10.5;
+  -fx-font-weight: bold!important;
+  -fx-fill: #52575d!important;
+  -fx-text-fill: #52575d!important;
+
+  .box {
+    -fx-padding: 2;
+    -fx-background-color: transparent!important;
+    -fx-background-radius: 3 !important;
+    -fx-border-radius: 3 !important;
+    -fx-border-color: #b5b5b5 !important;
+    -fx-border-width: 1.5 !important;
+    -fx-min-width: 17 !important;
+    -fx-min-height: 17 !important;
+    -fx-pref-width: 17 !important;
+    -fx-pref-height: 17 !important;
+    -fx-max-width: 17 !important;
+    -fx-max-height: 17 !important;
+
+    .mark {
+      visibility: hidden;
+      -mfx-color: white;
+      -fx-fill: none;
+      -mfx-description: "fas-check";
+      -mfx-size: 12;
+      -fx-stroke-width: 1.5;
+      -mfx-size: 10 !important;
+      -fx-stroke: white!important;
+      -fx-stroke-width: 4 !important;
+      -fx-scale-x: .45!important;
+      -fx-scale-y: .45!important;
+    }
+  }
+
+  .ripple-container {
+    -fx-padding: 4;
+    -fx-background-radius: 100%!important;
+    -fx-border-radius: 100%!important;
+    -fx-min-width: 40 !important;
+    -fx-min-height: 40 !important;
+    -fx-pref-width: 40 !important;
+    -fx-pref-height: 40 !important;
+    -fx-max-width: 40 !important;
+    -fx-max-height: 40 !important;
+
+    .mfx-ripple-generator {
+      -mfx-animation-speed: 1.5;
+      -mfx-ripple-color: derive(-mfx-main, 110%);
+      -mfx-ripple-radius: 16;
+      //-mfx-auto-clip: true;
+      -fx-background-radius: 100% !important;
+      -fx-border-radius: 100% !important;
+    }
+  }
+
+  &:selected .box,
+  &:indeterminate .box {
+    -fx-background-color: -mfx-main !important;
+    -fx-border-color: -mfx-main !important;
+  }
+
+  &:selected .box .mark {
+    visibility: visible;
+  }
+
+  &:selected:disabled .box,
+  &:indeterminate:disabled .box {
+    -fx-background-color: -mfx-secondary;
+    -fx-border-color: -mfx-secondary;
+  }
+
+  &:indeterminate .box .mark {
+    visibility: visible;
+    -mfx-description: "fas-minus";
+  }
+
+  & .ripple-container .mfx-ripple-generator {
+    -mfx-animation-speed: 1.5;
+    -mfx-ripple-color: derive(-mfx-main, 110%);
+    -mfx-ripple-radius: 16;
+  }
+}
